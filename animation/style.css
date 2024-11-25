@@ -1,0 +1,243 @@
+    .d1 {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        margin-left: 50px;
+        margin-top: 50px;
+        transform: rotate(30deg);
+        transition: 2s;
+    }
+    
+    .d1:hover {
+        transform: rotate(360deg);
+    }
+    
+    .d2 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        margin-left: 50px;
+        margin-top: 50px;
+        transform: translateX(100px);
+        transition: background-color 1s;
+    }
+    
+    .d2:hover {
+        background-color: burlywood;
+    }
+    
+    .d3 {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        margin-left: 50px;
+        margin-top: 50px;
+        transform: translateY(300px);
+    }
+    
+    .d4 {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        margin-left: 50px;
+        margin-top: 50px;
+        transform: translate(500px, 200px);
+    }
+    
+    .d4:hover {
+        translate: ;
+    }
+    
+    .d5 {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        margin-left: 50px;
+        margin-top: 50px;
+        transform: scaleX(1.5);
+    }
+    
+    .d6 {
+        width: 200px;
+        height: 200px;
+        background-color: gray;
+        margin-left: 50px;
+        margin-top: 50px;
+        transform: skewX(30deg);
+    }
+    
+    .d7 {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin-left: 50px;
+        margin-top: 50px;
+        transform: skewY(40deg);
+    }
+    
+    .d8 {
+        width: 200px;
+        height: 200px;
+        background-color: gray;
+        margin-left: 50px;
+        margin-top: 50px;
+        transition-property: transform background-color border-radius;
+        transition-duration: 4s;
+        transition-delay: 0s;
+        transition-timing-function: linear;
+    }
+    
+    .d8:hover {
+        transform: translateX(600px) rotate(360deg) scale(0.2, 0.2)skew(30deg, 30deg);
+        background-color: blueviolet;
+        border-radius: 60%;
+    }
+    /* use images in css instead of html to ensure size get mismatched  background-image:url()*/
+    
+    .d9 {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        margin-left: 50px;
+        margin-top: 50px;
+        transition-property: transform background-color;
+        transition-duration: 2s;
+        transition-delay: 0s;
+        transition-timing-function: linear;
+    }
+    
+    .d9:hover {
+        transform: scale(2, 2) skew(30deg, 30deg);
+        background-color: blueviolet;
+        border-radius: 60%;
+    }
+    
+    .d10 {
+        width: 200px;
+        height: 200px;
+        border: 2px dashed red;
+        transition-property: width height transform;
+        transition-duration: 4s;
+    }
+    
+    .d10:hover {
+        /*transform: scaleX(3, 3);*/
+        transform: scaleY(3, 3);
+        width: 100px;
+    }
+    
+    .d11 {
+        width: 400px;
+        height: 400px;
+        margin: 30px;
+        background-color: red;
+    }
+    
+    .d11n {
+        width: 400px;
+        height: 400px;
+        background-color: grey;
+        transition: transform 2s;
+    }
+    
+    .d11n:hover {
+        transform: perspective(500px)rotateX(30deg);
+    }
+    
+    .d12 {
+        width: 400px;
+        height: 400px;
+        margin: 30px;
+        background-color: red;
+    }
+    
+    .d12n {
+        width: 400px;
+        height: 400px;
+        background-color: grey;
+        transition: transform 2s;
+    }
+    
+    .d12n:hover {
+        transform: perspective(300px)rotateX(60deg) scale(0.3);
+    }
+    
+    .d13 {
+        width: 400px;
+        height: 400px;
+        margin: 30px;
+        background-color: red;
+    }
+    
+    .d13n {
+        width: 400px;
+        height: 400px;
+        background-color: grey;
+        transition: transform 2s;
+    }
+    
+    .d13n:hover {
+        transform: perspective(300px)rotateZ(60deg) scale(0.5);
+    }
+    
+    .d14 {
+        width: 400px;
+        height: 400px;
+        margin: 30px;
+        background-color: red;
+    }
+    
+    .d14n {
+        width: 400px;
+        height: 400px;
+        background-color: grey;
+        transition: transform 2s;
+    }
+    
+    .d14n:hover {
+        transform: perspective(300px)rotate3d(1, 1, 1, 60deg) scale(0.5);
+    }
+    
+    .d15 {
+        width: 400px;
+        height: 400px;
+        margin: 30px;
+        background-color: red;
+    }
+    
+    .d15n {
+        width: 400px;
+        height: 400px;
+        background-color: grey;
+        transition: transform 2s;
+    }
+    
+    .d15n:hover {
+        transform: perspective(300px) skew(10deg, 10deg) scale(0.5);
+    }
+
+    /*
+    .outer2{
+    width: 250px;
+    height: 250px;
+    background-color: red;    
+    transform: translateX(0px);
+    transition: transform 3s;
+}
+
+.inner2{
+    width: 250px;
+    height: 250px;
+    background-color: black;       
+    transform: translateX(0px);
+    transition: transform 3s;
+}
+
+.inner2:hover{
+    transform:perspective(200px) translateX(400px) rotate(30deg) scale(0.5);
+}
+
+
+.outer2:hover{
+    transform:translateX(400px) scale(1.5);
+}*/
